@@ -1,0 +1,43 @@
+<div class="row" id="productDetails">
+  <div class="col-md-6">
+    <img *ngIf="product?.path" [src]="product.path" class="center-block img-responsive">
+  </div>
+  <div class="col-md-6">
+    <div class="row">
+      <h4>{{ product?.name }}</h4>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="text-muted col-md-1">Price:</div>
+      <div class="col-md-11">
+        <div class="row">
+          <div class="col-md-4">
+            <strong class="priceTextColor lead text-center">{{ product?.price | indianCurrency }}</strong>
+          </div>
+          <strong class="col-md-4 text-left" id="freeDelivery">Free Delivery</strong>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="col-md-12">
+        <li *ngFor="let desc of product?.descriptionList; trackBy: trackByFn">{{ desc }}</li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-12">
+        <label for="selectQuantity">Select Quantity:</label>
+        <select class="form-control" #selectedQuantity>
+          <option *ngFor="let q of [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" [value]="q">{{ q }}</option>
+        </select>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-warning btn-block" (click)="addToCart(selectedQuantity.value)">
+      <span class="fa fa-cart-plus"></span>
+      Add to Cart
+    </button>
+  </div>
+
+</div>
+
+<app-suggested-products [product]="product"></app-suggested-products>

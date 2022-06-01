@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/">
+        <img class="img-thumbnail" src="./assets/images/logo.png" alt="Gemini Solutions">
+      </a>
+
+    </div>
+    <ul class="nav navbar-nav">
+      <li>
+        <a routerLink="/products/add">Add Products</a>
+      </li>
+      <li *ngFor="let type of productTypes" class="text-capitalize">
+        <a [routerLink]="['/products/type', type]">{{type}}</a>
+      </li>
+    </ul>
+    <a routerLink="/cart">
+      <div class="navbar-right text-muted" id="cartIconDiv">
+        <fa-icon [icon]="faShoppingCart"></fa-icon>
+        <span>
+          Cart
+          <span *ngIf="cartBadge !== 0" class="badge">{{ cartBadge }}</span>
+        </span>
+      </div>
+    </a>
+  </div>
+</nav>

@@ -1,0 +1,60 @@
+<footer class="row bgGray">
+  <div class="col-md-3">
+    <ul class="list-unstyled centralizeList">
+      <li>
+        <h4>
+          <u>Categories</u>
+        </h4>
+      </li>
+      <li *ngFor="let type of productTypes">
+        <a style="color: black" class="text-capitalize" [routerLink]="['/products/type', type]">{{ type }}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-3">
+    <ul class="list-unstyled centralizeList">
+      <li>
+        <h4>
+          <u>Useful Links</u>
+        </h4>
+      </li>
+      <li>Contact Us</li>
+      <li>Track Orders</li>
+      <li>Cancellation</li>
+    </ul>
+  </div>
+  <div class="col-md-3">
+    <div class="centralizeList">
+      <h4>
+        <u>Social Networks</u>
+      </h4>
+      <div class="text-muted">(Let's get in touch)</div>
+      <ul class="list-inline icons center-block">
+        <li>
+          <fa-icon [icon]="faFb"></fa-icon>
+        </li>
+        <li>
+          <fa-icon [icon]="faTwitter"></fa-icon>
+
+        </li>
+        <li>
+          <fa-icon [icon]="faLinkedIn"></fa-icon>
+        </li>
+        <li>
+          <fa-icon [icon]="faInsta"></fa-icon>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <ul class="list-unstyled centralizeList">
+      <li>
+        <h4>
+          <u>Features</u>
+        </h4>
+      </li>
+      <li>Free Replacement</li>
+      <li>Free Home Delivery</li>
+    </ul>
+  </div>
+</footer>

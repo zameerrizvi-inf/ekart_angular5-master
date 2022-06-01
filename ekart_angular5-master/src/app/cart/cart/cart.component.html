@@ -1,0 +1,75 @@
+<div class="row">
+  <h4 class="col-md-12">Shopping Cart</h4>
+</div>
+
+<div class="row">
+  <div class="col-md-2 col-md-offset-5 text-muted text-center" ng-click="orderByThis('price')">
+    Price
+  </div>
+  <div class="col-md-2 text-muted text-center">
+    Quantity
+  </div>
+  <div class="col-md-3 text-muted text-center">
+    Cost
+  </div>
+</div>
+
+<hr>
+
+
+<div class="row rowsCartProduct" *ngFor="let item of cartItems; trackBy: trackByFn">
+  <div class="col-md-2">
+    <a [routerLink]="['/products/detail', item.id]">
+      <img class="cartProductImgs img-responsive center-block" [src]="item.path">
+    </a>
+  </div>
+
+  <div class="col-md-3">
+    <div class="row">
+      <a class="text-primary col-md-10" [routerLink]="['/products/detail', item.id]">{{ item.name }}</a>
+      <button class="btn col-md-2 bgWhite" (click)="deleteCartItem(item.id)">
+        <fa-icon [icon]="faTrash"></fa-icon>
+      </button>
+    </div>
+
+    <div class="row ">
+      <small class="col-md-12 ">{{ item.descriptionList[0] }}
+      </small>
+    </div>
+  </div>
+
+  <div class="col-md-2 priceTextColor text-center ">
+    {{ item.price | indianCurrency }}
+  </div>
+
+  <div class="col-md-2 text-center ">
+    <button class="btn btn-sm " (click)="changeCartItemQuantity(item.id, -1) ">
+      <fa-icon [icon]="faMinus"></fa-icon>
+    </button>
+    {{ item.quantity }}
+    <button class="btn btn-sm " (click)="changeCartItemQuantity(item.id, 1) ">
+      <fa-icon [icon]="faPlus"></fa-icon>
+    </button>
+  </div>
+
+  <div class="col-md-3 text-center ">
+    {{ item.price * item.quantity | indianCurrency }}
+  </div>
+</div>
+
+<ng-template [ngIf]="cartItems?.length > 0">
+  <hr>
+
+  <div class="row" id="divSubtotal">
+    <div class="col-md-4 col-md-offset-8 text-right">
+      <strong>Total Cost({{ totalQuantity() }} items):
+        <span class="priceTextColor">{{ totalCartCost() | indianCurrency }}</span>
+      </strong>
+    </div>
+  </div>
+</ng-template>
+
+
+<div *ngIf="cartItems?.length === 0" class="row text-center" id="emptyCartDiv">
+  Cart is empty
+</div>

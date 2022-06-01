@@ -1,0 +1,10 @@
+<div class="col-md-2">
+  <ul class="list-unstyled centralizeList">
+    <li>
+      <a routerLink="/">HOME</a>
+    </li>
+    <li *ngFor="let type of productTypes">
+      <a [routerLink]="['/products/type', type]">{{ type | uppercase }}</a>
+    </li>
+  </ul>
+</div>

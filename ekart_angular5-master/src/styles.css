@@ -1,0 +1,54 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.bgGray {
+  background-color: #eeeeee;
+}
+.bgWhite {
+  background-color: #ffffff;
+}
+
+.row.bgGray {
+  margin-bottom: 0.2%;
+}
+
+.centralizeList {
+  margin: 10% auto;
+  width: 50%;
+}
+
+.centralizeList a {
+  cursor: pointer;
+}
+
+.card {
+  margin: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 1%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  position: relative;
+  height: 200px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+
+@media only screen and (min-width: 600px) {
+  .bgGray > .bgWhite {
+    min-height: 470px;
+  }
+}
+
+.priceTextColor {
+  color: #b12704;
+}

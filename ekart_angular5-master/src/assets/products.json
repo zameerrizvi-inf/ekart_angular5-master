@@ -1,0 +1,212 @@
+[
+  {
+    "id": 0,
+    "name": "OnePlus 6",
+    "price": 34999,
+    "descriptionList": [
+      "20MP+16MP primary dual camera with OIS, Super Slow motion, Portrait mode and 16MP front facing camera",
+      "15.95 centimeters(6.28 - inch) FHD + Full Optic AMOLED 19: 9 display with 2280 x 1080 pixels resolution. 2.5D Corning Gorilla Glass 5",
+      "OxygenOS based on Android Oreo 8.1 with Qualcomm Snapdragon 845 octa core processor",
+      "6 GB RAM",
+      "3300mAH lithium Polymer battery with Dash Charge technology",
+      "Face Unlock, Fingerprint scanner, Water Resistant, Glass back and NFC enabled",
+      "1 year manufacturer warranty for device and in -box accessories including batteries from the date of purchase"
+    ],
+    "imgName": "phone1.jpg",
+    "type": "electronics"
+  },
+  {
+    "id": 1,
+    "name": "iPhone X",
+    "price": 102000,
+    "descriptionList": [
+      "14.73 centimeters(5.8 - inch) capacitive touchscreen with 2436 x 1125 pixels resolution",
+      "iOS v11.1.1 operating system with 1.3GHz Apple A11 Bionic hexa core processor",
+      "3GB RAM 256GB internal memory and single SIM",
+      "2716mAH lithium - ion battery",
+      "1 year manufacturer warranty for device and in -box accessories including batteries from the date of purchase"
+    ],
+    "imgName": "phone2.jpg",
+    "type": "electronics"
+  },
+  {
+    "id": 2,
+    "name": "Samsung S9+",
+    "price": 60980,
+    "descriptionList": [
+      "Screen Size(In Inches) 6.2 Display Technology Super Amoled",
+      "Screen Resolution(In Pixels) 1440 X 2560 Display",
+      "Features Capacitive Touchscreen Pixel Density(Ppi) 529",
+      "Scratch Resistant Glass Corning Gorilla Glass 5 To The Body"
+    ],
+    "imgName": "phone3.jpg",
+    "type": "electronics"
+  },
+  {
+    "id": 3,
+    "name": "Mi Mix 2",
+    "price": 29900,
+    "descriptionList": [
+      "6Gb Ram Dual Channel",
+      "Full Screen Display 15.2Cm(5.99) Large Display",
+      "18: 9 Aspect Ratio Ceramic Body Aerospace - Grade Aluminum Alloy Frame Snapdragon 835 Flagship Qualcomm Processor"
+    ],
+    "imgName": "phone4.jpg",
+    "type": "electronics"
+  },
+  {
+    "id": 4,
+    "name": "Illusion Yellow Polo T-Shirt",
+    "price": 299,
+    "descriptionList": ["Tshirt"],
+    "imgName": "fashion1.jpg",
+    "type": "fashion"
+  },
+  {
+    "id": 5,
+    "name": "Illusion Green Polo T-Shirt",
+    "price": 349,
+    "descriptionList": ["Tshirt"],
+    "imgName": "fashion2.jpg",
+    "type": "fashion"
+  },
+  {
+    "id": 6,
+    "name": "Illusion Gray Polo T-Shirt",
+    "price": 400,
+    "descriptionList": ["Tshirt"],
+    "imgName": "fashion3.jpg",
+    "type": "fashion"
+  },
+  {
+    "id": 7,
+    "name": "Illusion Blue Polo T-Shirt",
+    "price": 249,
+    "descriptionList": ["Tshirt"],
+    "imgName": "fashion4.jpg",
+    "type": "fashion"
+  },
+  {
+    "id": 8,
+    "name": "Yonex Gr 303 Badminton Racquet",
+    "price": 399,
+    "descriptionList": [
+      "Low torsion steel shaft",
+      "Ideal for beginners and intermediate level players",
+      "Comes with head cover",
+      "Lightweight racquet",
+      "Aluminium frame",
+      "Available: Strung"
+    ],
+    "imgName": "sport1.jpg",
+    "type": "sports"
+  },
+  {
+    "id": 9,
+    "name": "Elan Brazuca Replica Football",
+    "price": 2800,
+    "descriptionList": [
+      "Single moulded ball without any joints and stitches",
+      "What that means is that the ball will never lose its shape and does not deflate ever",
+      "Official match ball Fifa 2014 replica",
+      "Same quality as that of match ball",
+      "Ensures good performance",
+      "Offering optimum response and feel",
+      "In - Box Contents: 1 Football"
+    ],
+    "imgName": "sport2.jpg",
+    "type": "sports"
+  },
+  {
+    "id": 10,
+    "name": "DSC Cricket Helmet Small",
+    "price": 879,
+    "descriptionList": [
+      "High impact resistant polypropylene outer shell",
+      "Shock resistant, sweat absorbent breathable mesh inner lining to keep dry and clean",
+      "Hardened power coated adjustable face guard withmoulded ear flap",
+      "Inbuilt vent for maximum airflow",
+      "Match quality slim line shell with re - enforced peak, Ideal Starter helmet made from reinforced fibreglass",
+      "Adjustable steel grill with high levels of visibility, Air vents for easy breathe of the head",
+      "Specialist for professional playes or beginers players"
+    ],
+    "imgName": "sport3.jpg",
+    "type": "sports"
+  },
+  {
+    "id": 11,
+    "name": "Nivia Goalkeeper Gloves",
+    "price": 329,
+    "descriptionList": [
+      "Designed with Finger Save Technology",
+      "Elastic Wrist support",
+      "Adjustable wrist and easy to wear",
+      "Rubber palm",
+      "Enhanced grip on the ball in wet conditions"
+    ],
+    "imgName": "sport4.jpg",
+    "type": "sports"
+  },
+  {
+    "id": 12,
+    "name": "Hero RangerDTB Mountain cycle",
+    "price": 6192,
+    "descriptionList": [
+      "Comes in 85 % assambled state.Allen - Key & Spanner provided for DIY installation.Installation video present in the Image tab.",
+      "Wheel Size - 26 inches.Frame Size - 19.7 inches",
+      "Ideal for cyclist with height between 5 Feet 4 inches to 6 Feet 4 inches",
+      "Steel Frame, Front and Rear Suspension, Adjustable seat, PU Saddle",
+      "Plastic Pedals with Reflectors",
+      "Front & Rear Cantilever Brakes",
+      "Geared cycle - Shinano 6 Speed Shifters"
+    ],
+    "imgName": "cycle1.jpg",
+    "type": "cycles"
+  },
+  {
+    "id": 13,
+    "name": "Hero RX1 24T Mountain Bike",
+    "price": 7350,
+    "descriptionList": [
+      "Comes in 85 % assambled state.Allen - Key & Spanner provided for DIY installation.Installation video present in the Image tab",
+      "Wheel Size - 24 inches.Frame Size - 17 inches",
+      "Ideal for cyclist with height between 5 Feet 4 inches to 6 Feet 4 inches",
+      "Steel Frame with Suspension fork, Adjustable seat, PU Saddle",
+      "MTB Pedals",
+      "Front & Rear V-Brakes"
+    ],
+    "imgName": "cycle2.jpg",
+    "type": "cycles"
+  },
+  {
+    "id": 14,
+    "name": "Roulik Tangent 38.0",
+    "price": 23990,
+    "descriptionList": [
+      "Comes in 85 % assambled state.Allen - Key & Spanner provided for DIY installation.Installation video present in the Image tab",
+      "Wheel Size - 24 inches.Frame Size - 17 inches",
+      "Ideal for cyclist with height between 5 Feet 4 inches to 6 Feet 4 inches",
+      "Steel Frame with Suspension fork, Adjustable seat, PU Saddle",
+      "MTB Pedals",
+      "Front & Rear V-Brakes"
+    ],
+    "imgName": "cycle3.jpg",
+    "type": "cycles"
+  },
+  {
+    "id": 15,
+    "name": "Hero Next 24T Mountain cycle",
+    "price": 6654,
+    "descriptionList": [
+      "Comes in 85 % assambled state.Allen - Key & Spanner provided for DIY installation.Installation video present in the Image tab",
+      "Wheel Size - 16 inches.Frame Size - 11.4 inches",
+      "Ideal for cyclist with height between 2 feet 10 inches to 3 feet 8 inches",
+      "Rigid Steel Frame, Adjustable seat with Rexine Saddle",
+      "Molded Anti-Skid Pedals",
+      "Front & Rear Caliper Brakes",
+      "18 Speed cycle"
+    ],
+    "imgName": "cycle4.jpg",
+    "type": "cycles"
+  }
+]

@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<div class="container-fluid" id="mainContent">
+  <div class="row bgGray">
+    <app-sidebar></app-sidebar>
+    <div class="col-md-10 bgWhite">
+      <router-outlet (activate)="changeOfRoutes()"></router-outlet>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
+<spinner></spinner>

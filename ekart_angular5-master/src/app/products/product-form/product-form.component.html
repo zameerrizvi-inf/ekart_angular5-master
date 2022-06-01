@@ -1,0 +1,52 @@
+<div class="row">
+  <h4 class="col-md-12 text-center">Add New Product</h4>
+</div>
+
+<div class="row">
+  <form [formGroup]="productForm" class="col-md-4 col-md-offset-4 well" (ngSubmit)="onSubmit()">
+    <div class="form-group has-feedback" [ngClass]="{'has-error': productForm.get('name').touched && !productForm.get('name').valid, 'has-success': productForm.get('name').valid}">
+      <label class="center-block">Product Name:
+        <input type="text" class="form-control" formControlName="name">
+      </label>
+    </div>
+    <div class="form-group has-feedback" [ngClass]="{'has-error': productForm.get('type').touched && !productForm.get('type').valid, 'has-success': productForm.get('type').valid}">
+      <label class="center-block">Product Type:
+        <select class="form-control" formControlName="type">
+          <option *ngFor="let type of productTypes" [value]="type">{{ type }}</option>
+        </select>
+      </label>
+    </div>
+    <div class="form-group has-feedback" [ngClass]="{'has-error': productForm.get('price').touched && !productForm.get('price').valid, 'has-success': productForm.get('price').valid}">
+      <label class="center-block">Product Price:
+        <input type="number" class="form-control" formControlName="price">
+      </label>
+    </div>
+    <div class="form-group">
+      <label class="btn btn-default btn-xs">{{ imgLabel }}
+        <input type="file" (change)="onFileChange($event.target.files)" hidden>
+      </label>
+      <img *ngIf="imgName.value" src="http://localhost:3000/uploads/{{ imgName.value }}" class="img-thumbnail selectedImg">
+      <button type="button" class="btn btn-xs" *ngIf="imageToUpload" (click)="uploadImage()">Upload</button>
+    </div>
+    <div formArrayName="descriptions">
+      <div class="input-group divInputDescription has-feedback" *ngFor="let desc of descriptions.controls; let i=index; let isLast=last"
+        [ngClass]="{'has-error': productForm.get('descriptions.'+i).touched && !productForm.get('descriptions.'+i).valid, 'has-success': productForm.get('descriptions.'+i).valid}">
+        <input type="text" class="form-control" [formControlName]="i" placeholder="Description #{{ i + 1}}" [appInputFocus]="isLast">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default" (click)="deleteDescription(i)">
+            <fa-icon [icon]="faTrash"></fa-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn btn-primary btn-xs" (click)="addDescription()">
+        Add Description
+      </button>
+    </div>
+    <button type="submit" class="btn btn-block" [class.btn-success]="productForm.dirty && productForm.valid" [class.btn-warning]="!productForm.valid"
+      [disabled]="!productForm.valid">Submit Product
+    </button>
+
+  </form>
+</div>
